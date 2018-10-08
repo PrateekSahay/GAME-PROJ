@@ -7,11 +7,11 @@ import { ErrorComponent } from './error/error.component';
 
 
 const routes: Route[] = [
-  {path:'',redirectTo:'/home',pathMatch:'full'},
-  {path:'home',component:HomeComponent},
-  {path:'score',component:ScoreComponent},
-  {path:'game',component:GameComponent},
-  {path:'**',component:ErrorComponent}
+  {path: '', redirectTo: '/home', pathMatch: 'full'},
+  {path: 'home', component: HomeComponent},
+  {path: 'score', component: ScoreComponent},
+  {path: 'game', component: GameComponent},
+  {path: '**', component: ErrorComponent}
 ];
 
 @NgModule({

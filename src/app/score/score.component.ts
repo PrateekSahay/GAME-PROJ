@@ -1,4 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { CallserviceService } from 'src/app/callservice.service';
+// import { Player } from '../game/game.model';
+
+
+
 
 @Component({
   selector: 'app-score',
@@ -6,10 +11,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./score.component.css']
 })
 export class ScoreComponent implements OnInit {
+  response: any;
 
-  constructor() { }
+  constructor(private callObj: CallserviceService) {
+
+   }
 
   ngOnInit() {
-  }
+    const obs = this.callObj.getMethod();
+    obs.subscribe((resp) => {
+        this.response = resp;
+  });
 
+
+  }
 }
+

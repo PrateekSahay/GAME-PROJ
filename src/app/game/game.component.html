@@ -1,0 +1,20 @@
+
+<section class="game">
+    <button type="button" #firstbutton class="btn btn-primary" (click)="click(firstbutton)" id="1"></button>
+    <button type="button" #secondbutton class="btn btn-primary" (click)="click(secondbutton)" id="2"></button>
+    <button type="button" #thirdbutton class="btn btn-primary" (click)="click(thirdbutton)" id="3"></button>
+    <button type="button" #fourthbutton class="btn btn-primary" (click)="click(fourthbutton)" id="4"></button>
+</section>
+
+<div id="clock">
+    {{counter}}
+</div>
+
+
+
+<!--
+
+    <countdown [config]="{leftTime: 1000 * 10}"
+    (finished)="onFinished()"
+    (notify)="onNotify($event)"></countdown>
+-->

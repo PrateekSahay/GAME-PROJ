@@ -6,6 +6,7 @@
         <th scope="col">Score</th>
       </tr>
     </thead>
+    <!--
     <tbody>
       <tr>
         <th scope="row">1</th>
@@ -24,7 +25,15 @@
       </tr>
     </tbody>
   </table>
-  <p>
+  <p> -->
 <!--
   <p><button type="button" class="btn btn-dark btn-lg" [routerLink]="['/score']">Dare to play AGAIN!!!</button></p>
 -->
+<tbody *ngFor = "let point of response; index as i;" >
+  <tr>
+    <td>{{ i+1 }}</td>
+    <td>{{ point.time }}</td>
+    <td>{{ point.score }}</td>
+  </tr>
+</tbody>
+</table>
