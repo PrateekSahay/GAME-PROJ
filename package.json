@@ -3,20 +3,17 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "node server.js",
+    "start": "ng server",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e",
-    "postinstall": "ng build --prod"
-  },
+    "e2e": "ng e2e"
+    },
   "private": true,
   "dependencies": {
     "@angular/animations": "^6.1.0",
-    "@angular/cli": "^6.2.4",
     "@angular/common": "^6.1.0",
     "@angular/compiler": "^6.1.0",
-    "@angular/compiler-cli": "^6.1.9",
     "@angular/core": "^6.1.0",
     "@angular/forms": "^6.1.0",
     "@angular/http": "^6.1.0",
@@ -29,7 +26,6 @@
     "ngx-countdown": "^3.1.0",
     "path": "^0.12.7",
     "rxjs": "~6.2.0",
-    "typescript": "~2.9.2",
     "zone.js": "~0.8.26"
   },
   "devDependencies": {
@@ -53,9 +49,5 @@
     "ts-node": "~7.0.0",
     "tslint": "~5.11.0",
     "typescript": "~2.9.2"
-  },
-  "engines": {
-    "node": "8.11.4",
-    "npm": "5.6.0"
   }
 }

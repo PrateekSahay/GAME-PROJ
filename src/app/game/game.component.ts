@@ -141,7 +141,7 @@ export class GameComponent implements AfterViewInit {
   }
 
   inCorrectClick() {
-    // this.changeColor();
+     this.changeColor();
     this.correctClicked = 0;
     clearInterval(this.interval);
     this.multiplier = 1;
