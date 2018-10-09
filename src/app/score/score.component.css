@@ -2,3 +2,10 @@
 .btn btn-dark btn-lg{
     justify-content: center;
 }*/
+
+.againButton{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
